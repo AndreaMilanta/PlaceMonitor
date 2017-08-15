@@ -1,0 +1,10 @@
+<database name="PlaceMonitor">
+    <table name="user">
+        <attribute name="email" type="varchar(40)"  key="primary"/>
+        <attribute name="password"  type="char(40)"     key="none" encryption="SHA-1"/>
+        <attribute name="fname" type="varchar(20)"  key="none"/>
+        <attribute name="lname" type="varchar(20)"  key="none"/>
+        <attribute name="sex"   type="char(1)"      key="none"/>
+        <attribute name="age"   type="tinyint(1) unsigned" key="none"/>
+    </table>
+</database>
