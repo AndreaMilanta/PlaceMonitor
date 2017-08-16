@@ -9,10 +9,18 @@
 </head>
 <body>
     <h3>Welcome to Place Monitor</h3>
-    <h5>please insert your credentials</h5>
-    <form action="" method="post">
-        <input type="email" name="email" id="email"/>
-        <input type="password" name="pswd" id="pswd"/>
+    <p>please insert your credentials</p>
+    <form action="" method="post" id="loginForm">
+        <p>
+            email: <br>
+            <input type="email" name="email" placeholder="example@test.com" id="email"/>  </br>
+            password:  <br>
+            <input type="password" name="pswd" id="pswd"/>
+            <button class="loginBt" id="loginButton"
+                    hidden="hidden"  onclick="checkAndSubmit();">
+                Login
+            </button>
+        </p>
     </form>
 </body>
 </html>
