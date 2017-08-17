@@ -13,13 +13,13 @@
 <body>
     <h3>Welcome to Place Monitor</h3>
     <p id="errorPar">please insert your credentials</p>
-    <form action="" method="post" id="loginForm" onsubmit="return validateCreds();">
+    <form action="home.php" method="post" id="loginForm">
         email: <br>
         <input type="email" name="email" placeholder="example@test.com" id="email"/>  </br>
         password:  <br>
         <input type="password" name="pswd" placeholder="password" id="pswd"/>
         <br>
-        <input type="submit" name="login" value="login"/>
     </form>
+    <button onclick="validateCreds();">login</button>
 </body>
 </html>
