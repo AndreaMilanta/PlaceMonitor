@@ -5,10 +5,12 @@
 <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta hhttp-equiv="X-UA-Compatible" content="ie=edge">
 -->
-<!-- INCLUDES! -->
-    <script src="javascript/login.js"></script>
-
     <title>PlaceMonitor Login</title>
+<!--    <?php
+        require $_SERVER["DOCUMENT_ROOT"] . '/php/common.php';
+        $conn = dbConnect($db);
+     ?>
+-->
 </head>
 <body>
     <h3>Welcome to Place Monitor</h3>
@@ -20,6 +22,13 @@
         <input type="password" name="pswd" placeholder="password" id="pswd"/>
         <br>
     </form>
-    <button onclick="validateCreds();">login</button>
+    <button id="loginButton" >login</button>
+    <button id="resetButton" hidden >reset password</button>
+    <br>
+    <a id="fgtPswdLink" href="#">forgot password?</a>
+
+    <!-- INCLUDES! -->
+    <script src="javascript/login.js"></script>
+
 </body>
 </html>
